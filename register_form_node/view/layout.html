@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/index.css" type="text/css">
+</head>
+<body>
+<header class="container header">
+    <div class="row">
+        <div class="col-12">
+            <a href="/" class="mainPage">Main page</a>
+            <div class="float-right">
+                <div class="sessionName">
+                    <span><%= sessionName %></span>
+                </div>
+                <% if(sessionName) { %>
+                <a href="/logout" class="logout">Log out</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="duplicate-name-message"><%= msg %></div>
+
+    <main class="container">
+        <%- body %>
+    </main>
+
+<footer style="margin-top: 100px">@copyright 2020</footer>
+</body>
+</html>
