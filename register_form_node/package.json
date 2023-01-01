@@ -2,7 +2,7 @@
   "name": "register_form_node",
   "version": "1.0.0",
   "dependencies": {
-    "config": "^3.3.0",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "knex": "^0.20.10",
